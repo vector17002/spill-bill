@@ -1,6 +1,6 @@
 # Split - Easily split expenses with friends and groups (A Splitwise Clone)
 
-Built with Next.js 14 App Router, Clerk for Authentication, React, NeonDb for database management, ShadCN UI library for components, TypeScript, and TailwindCSS. Utilizing Cursor AI, Claude AI and Galileo AI.
+Built with Next.js 14 App Router, Clerk for Authentication, React, NeonDb for database management, ShadCN UI library for components, TypeScript, and TailwindCSS.
 
 ![Project Image](https://splitai.vercel.app/og-image.png)
 
