@@ -35,9 +35,6 @@ To get started with this project, follow these steps:
 
 1. Click the "Fork" button in the top right corner of this GitHub repository to create a copy in your account.
 2. Clone your forked repository to your local machine using:
-   ```
-   git clone https://github.com/kulkarniankita/split-app.git
-   ```
 3. Navigate to the project directory:
    ```
    cd split-app
@@ -62,11 +59,3 @@ To get started with this project, follow these steps:
    npm run dev
    ```
 3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
-
-## Acknowledgements
-
-- [Clerk](https://go.clerk.com/5qOWrFA) for making this project possible
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
