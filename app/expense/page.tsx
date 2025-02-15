@@ -14,6 +14,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useOrganization, useOrganizationList, useUser } from '@clerk/nextjs';
 import React, { useEffect, useState } from 'react';
 import { addExpense } from '../actions';
+import { useRouter } from 'next/navigation';
 
 // ... (rest of the code remains unchanged)
 
@@ -40,7 +41,7 @@ export default function AddExpense() {
   const [splitWith, setSplitWith] = useState<SplitMember[]>([]);
   const [organizations, setOrganizations] = useState<Organization[]>([]);
   const [members, setMembers] = useState<Member[]>([]);
-
+  const router = useRouter()
   const { user, isLoaded: isUserLoaded } = useUser();
   const { userMemberships, isLoaded: isOrgListLoaded } = useOrganizationList({
     userMemberships: true,
@@ -133,6 +134,7 @@ export default function AddExpense() {
         });
 
         // Reset form
+        router.push(`/group/${group}`)
         setAmount('');
         setDescription('');
         setGroup('');
