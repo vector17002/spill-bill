@@ -10,6 +10,7 @@ export default function Banner() {
         <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-gray-900 p-4">
           Split expenses with friends in seconds
         </h1>
+        <div className='flex justify-between items-center max-w-2xl w-full'>
         <Link href="/groups">
           <Button
             size="lg"
@@ -18,6 +19,10 @@ export default function Banner() {
             Get Started
           </Button>
         </Link>
+        <Button>
+        <a href='/UserStoryUI.zip' download>🤫</a>
+      </Button>
+      </div>
       </div>
     </div>
   );
