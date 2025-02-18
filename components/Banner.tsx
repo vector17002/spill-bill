@@ -22,9 +22,6 @@ export default function Banner() {
         <Button>
         <a href='/UserStoryUI.zip' download>😎🤫</a>
       </Button>
-      <Button>
-        <a href='/Arihant_UserStory.zip' download>💀</a>
-      </Button>
       </div>
       </div>
     </div>
