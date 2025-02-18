@@ -34,6 +34,7 @@ interface SplitMember {
 }
 
 export default function AddExpense() {
+  const [submitting , setSubmitting] = useState(false)
   const [amount, setAmount] = useState('');
   const [description, setDescription] = useState('');
   const [group, setGroup] = useState('');
@@ -125,6 +126,7 @@ export default function AddExpense() {
     };
 
     try {
+      setSubmitting(true)
       const result = await addExpense(expenseData);
       if (result.success) {
         toast({
@@ -150,6 +152,8 @@ export default function AddExpense() {
         description: "We couldn't add your expense. Let's give it another try!",
         variant: 'destructive',
       });
+    }finally{
+    setSubmitting(false)
     }
   };
 
@@ -287,10 +291,10 @@ export default function AddExpense() {
             </SelectContent>
           </Select>
         </div>
-
+        { submitting ? (<div className='font-bold text-indigo-500'>Submitting...</div>) : (
         <Button type="submit" className="w-full">
           Save Expense
-        </Button>
+        </Button>)}
       </form>
     </div>
   );
