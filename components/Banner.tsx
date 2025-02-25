@@ -19,9 +19,6 @@ export default function Banner() {
             Get Started
           </Button>
         </Link>
-        <Button>
-        <a href='/UserStoryUI.zip' download>😎🤫</a>
-      </Button>
       </div>
       </div>
     </div>
